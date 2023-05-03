@@ -9,10 +9,3 @@ const parser = (json) =>  JSON.parse(json, (_, v) => typeof v === 'string' && /\
 
 const serialized = serializer(obj);
 const parsed = parser(serialized);
-
-console.log(serialized)
-
-console.log(parsed)
-console.log(typeof parsed.foo)
-console.log(typeof parsed.bar)
-console.log(typeof parsed.baz)
